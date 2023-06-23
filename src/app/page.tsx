@@ -118,33 +118,7 @@ export default function Home() {
         enablePointerInteraction={!animationPaused} // Disable pointer interaction when animation is paused
       />
     
-       {/* <ForceGraph3D 
-          graphData={graphData}
-          nodeThreeObject={(node) => {
-            const geometry = new THREE.SphereGeometry(4, 16, 12); 
-            const material = new THREE.MeshStandardMaterial({ 
-              color: node === hoveredNode ? 'red' : 'salmon', // change color on hover
-              roughness: 0.5,
-              lightMap: null,
-              lightMapIntensity: 1,
-              emissiveIntensity: 1,
-              emissiveMap: null,
-            });
-            return new THREE.Mesh(geometry, material);
-          }}
-            
-          linkDirectionalArrowLength={5.5}
-          linkDirectionalArrowRelPos={1}
-          linkDirectionalArrowColor={'black'}
-          linkOpacity={1}
-          linkCurvature={0.1}
-          nodeRelSize={4}
-          backgroundColor={'lightgrey'}
-          onNodeHover={handleNodeClick}
-          enablePointerInteraction={!animationPaused} // Disable pointer interaction when animation is paused
-          onTick={() => setAnimationPaused(false)} // Resume animation on each tick
-
-       /> */}
+      
         <button
           onClick={handleResumeAnimation}
           style={{
