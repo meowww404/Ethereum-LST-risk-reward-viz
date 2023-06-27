@@ -2,7 +2,7 @@
     "nodes": [
     { 
       "id": "stETH", 
-      "position": "initial asset",
+      "position": "Initial asset",
       "avgAPR": "+3.88%",
       "avgGasCostEntry": "1.5"
     },

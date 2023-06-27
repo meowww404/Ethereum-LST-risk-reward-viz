@@ -29,13 +29,14 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
        {clickedNode && <Tooltip node={clickedNode}/>}
+
        <div className="graph-container">
       <ForceGraph3D 
         graphData={graphData}
         nodeThreeObject={(node) => {
           let color;
           switch(node.position) {
-            case 'initial asset': color = '#00A3FF'; break;
+            case 'Initial asset': color = '#00A3FF'; break;
             case 'Entry': color = '#FFDAB9'; break;
             case 'Exit': color = '#F68370'; break;
         }
@@ -67,7 +68,7 @@ export default function Home() {
       }}
         linkDirectionalArrowLength={10}
         linkDirectionalArrowRelPos={1}
-        nodeLabel={node => `<span style="color: purple; font-size: 12px;">${node.id}</span>`}
+        nodeLabel={node => `<span style="color: black; font-size: 12px;">${node.id}</span>`}
         linkOpacity={1}
         linkCurvature={0.01}
         linkWidth={0.8}
@@ -80,7 +81,5 @@ export default function Home() {
     </main>
   );
 };
-
-
 
 

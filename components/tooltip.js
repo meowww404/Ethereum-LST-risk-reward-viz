@@ -2,18 +2,17 @@ import React from 'react';
 
 export default function Tooltip({node}) {
 
-
   return (
     <div
       style={{
         position: 'fixed',
         zIndex: 1,
         bottom: '-5%',
-        left: '50%',
+        left: '48%',
         transform: 'translate(-40%, -50%)',
         background: 'white',
         color: 'black',
-        padding: '2vw',
+        padding: '3vw',
         borderRadius: 5,
         fontSize: '12px',
         pointerEvents: 'none',
