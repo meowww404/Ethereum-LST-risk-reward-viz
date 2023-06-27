@@ -1,0 +1,85 @@
+{
+    "nodes": [
+    { 
+      "id": "stETH", 
+      "position": "initial asset",
+      "avgAPR": "+3.88%",
+      "avgGasCostEntry": "1.5"
+    },
+    { 
+      "id": "Maverick LP Strategy 1/2", 
+      "position": "Entry",
+      "avgAPR": "+5.45%",
+      "avgGasCostEntry": "0.9"
+    },
+    { 
+      "id": "Maverick LP Strategy 2/2", 
+      "position": "Exit",
+      "avgAPR": "+5.45%",
+      "avgGasCostExit": "0.85"
+    },
+    { 
+      "id": "Balancer LP Strategy 1/2", 
+      "position": "Entry",
+      "avgAPR": "+5.45%",
+      "avgGasCostEntry": "1.20"
+    },
+    { 
+      "id": "Balancer LP Strategy 2/2", 
+      "position": "Exit",
+      "avgAPR": "+5.45%",
+      "avgGasCostExit": "1.01"
+    },
+    { 
+      "id": "Aave v3 Leveraged Staking Strategy 1/2", 
+      "position": "Entry",
+      "avgAPR": "+5.45%",
+      "avgGasCostEntry": "0.9"
+    },
+    { 
+      "id": "Aave v3 Leveraged Staking Strategy 2/2", 
+      "position": "Exit",
+      "avgAPR": "+5.45%",
+      "avgGasCostExit": "0.9"
+    },
+    { 
+      "id": "Aave v2 Leveraged Staking Strategy 1/2", 
+      "position": "Entry",
+      "avgAPR": "+0.00%",
+      "avgGasCostEntry": "1.1"
+    },
+    { 
+      "id": "Aave v2 Leveraged Staking Strategy 2/2", 
+      "position": "Exit",
+      "avgAPR": "+0.00%",
+      "avgGasCostExit": "1.1"
+    },
+    { 
+      "id": "iETH Leveraged Staking Strategy 1/2", 
+      "position": "Entry",
+      "avgAPR": "+3.00%",
+      "avgGasCostEntry": "1.02"
+    },
+    { 
+      "id": "iETH Leveraged Staking Strategy 2/2", 
+      "position": "Exit",
+      "avgAPR": "+3.00%",
+      "avgGasCostExit": "1.08"
+    }
+    
+    
+  ],
+  "links": [
+    { "source": "stETH", "target": "Maverick LP Strategy 1/2"},
+    { "source": "stETH", "target": "Balancer LP Strategy 1/2"},
+    { "source": "stETH", "target": "Aave v2 Leveraged Staking Strategy 1/2"},
+    { "source": "stETH", "target": "Aave v3 Leveraged Staking Strategy 1/2"},
+    { "source": "stETH", "target": "iETH Leveraged Staking Strategy 1/2"},
+
+    { "source": "Maverick LP Strategy 1/2", "target": "Maverick LP Strategy 2/2" },
+    { "source": "Balancer LP Strategy 1/2", "target": "Balancer LP Strategy 2/2" },
+    { "source": "Aave v2 Leveraged Staking Strategy 1/2", "target": "Aave v2 Leveraged Staking Strategy 2/2" },
+    { "source": "Aave v3 Leveraged Staking Strategy 1/2", "target": "Aave v3 Leveraged Staking Strategy 2/2" },
+    { "source": "iETH Leveraged Staking Strategy 1/2", "target": "iETH Leveraged Staking Strategy 2/2" }
+  ]
+}

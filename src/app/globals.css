@@ -3,18 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 211, 211, 211; /* Set the background color to lightgrey */
+  --background: 'white'; /* Set the background color to lightgrey */
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-rgb: 0, 0, 0;
+    --foreground: 'white';
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb)); /* Use the single color for the background */
+  color: rgb(var(--foreground));
+  background: rgb(var(--background)); /* Use the single color for the background */
+}
+
+.node-label {
+  font-size: 12px;
+  padding: 1px 4px;
+  color: pink;
+}
+
+.graph-container {
+  margin-top: -100px; /* Adjust the value to move the graph up */
 }
